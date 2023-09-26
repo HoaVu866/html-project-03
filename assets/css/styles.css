@@ -336,3 +336,34 @@ a {
     line-height: 1.75;
     margin-top: 18px;
 }
+.features {
+    margin: 85px;
+    padding: 85px;
+}
+.features__inner {
+    display: flex;
+    align-items: center;    
+    column-gap: 130px;
+}
+.features__media {
+    width: 48%;
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+.features__img {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.features__img:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 332px;
+    height: 370px;
+}
+.features__cta {
+    margin-top: 38px;
+    transition: 0.5s;
+}
