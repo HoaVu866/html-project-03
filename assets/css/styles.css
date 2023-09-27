@@ -342,7 +342,7 @@ a {
 }
 .features__inner {
     display: flex;
-    align-items: center;    
+    align-items: center;
     column-gap: 130px;
 }
 .features__media {
@@ -366,4 +366,203 @@ a {
 .features__cta {
     margin-top: 38px;
     transition: 0.5s;
+}
+
+/* member */
+.member-top {
+    text-align: center;
+}
+.member__cta {
+    margin-top: 38px;
+}
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 70px;
+}
+.member-item__img-bg {
+    position: relative;
+    padding-top: 28px;
+    background: violet;
+    margin-bottom: 312px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.member-item__thumb {
+    position: absolute;
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.member-item__name {
+    color: var(--header-bg-);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.member-item__title {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+    margin-bottom: 85px;
+}
+.member__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.member__control-btn {
+    outline: none;
+    background: transparent;
+    border: none;
+}
+.member__control-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: solid 1px #575f66;
+    outline: none;
+    color: #575f66;
+}
+.member__control-icon:hover {
+    background: var(--primary-color-);
+    color: #fff;
+}
+.member__control-icon-right {
+    rotate: 180deg;
+}
+
+/* install */
+.install {
+    margin-top: 265px;
+}
+.install__inner {
+    display: flex;
+    width: 1150px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 0 70px;
+    background: var(--primary-color-);
+}
+.install__mobile-app {
+    display: block;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+}
+.install__content {
+    max-width: 586px;
+}
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+.install__heading {
+    max-width: 489px;
+}
+.install__row {
+    display: flex;
+    margin-top: 38px;
+    column-gap: 28px;
+}
+
+/* News */
+.news {
+    margin: 85px 0;
+    padding: 85px 0;
+}
+.news__block {
+    display: flex;
+    justify-content: space-between;
+}
+.news__heading {
+    max-width: 470px;
+}
+.news__title {
+    position: relative;
+    margin: 28px 0;
+    color: #10375c;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.news__title::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 105px;
+    height: 1px;
+    background-color: #10375c;
+}
+.news__control-btn {
+    display: flex;
+    outline: none;
+    background: transparent;
+    border: none;
+    column-gap: 20px;
+}
+.news__control-btn-icon:hover {
+    background: var(--primary-color-);
+    color: #fff;
+}
+.news__control-btn-icon {
+    margin-left: -5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: solid 1px #575f66;
+    column-gap: 28px;
+}
+.news__control-btn-icon:last-child {
+    rotate: 180deg;
+}
+.news__img {
+    width: 270px;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.news__info {
+    display: flex;
+    width: 540px;
+    column-gap: 30px;
+}
+.news__list:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.news__list--item1,
+.news__list--item2 {
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+}
+.news__inner {
+    margin: 18px 24px 21px 22px;
+}
+.news__inner--title {
+    color: var(--header-bg-);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62;
+}
+.news__inner--desc {
+    color: var(--desc-locor-);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+    margin-top: 10px;
+}
+.news__link {
+    display: block;
+    margin-top: 12px;
 }
